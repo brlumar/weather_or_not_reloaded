@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>WeatherOrNot</title>
+</head>
+
+<body>
+    <div class="container title-box">
+        <div class="title-top">
+            <div>
+                <h1 class="title is-1 has-text-light">
+                    WeatherOrNot
+                </h1>
+                <p class="subtitle has-text-light">
+                    Your <strong class="has-text-light">Travel Weather</strong> Source
+                </p>
+            </div>
+            
+            <section id="time-container">
+                <p id="currentTime"></p>
+            </section>
+        </div>
+        <div class="location-box">
+            <button id="use-location" style="font-size:24px"><i class="material-icons">my_location</i></button>
+            <input id="input-box" class="input is-rounded" type="text" placeholder="Enter Your City">
+            <button id="input-btn" class="button is-success is-rounded">SEARCH</button>
+              <!-- <button id="input-btn" class="btn" aria-label="search">  <i class="fas fa-save" aria-hidden="true"></i>
+            </button> -->
+            <!-- <button class="button is-rounded">Rounded</button> -->
+            <!-- <button class="button is-link is-rounded">Rounded</button> -->
+            <!-- <button class="button is-warning">Normal</button> -->
+
+        </div>
+        <div id="city-history" class="city-history container">
+            <button class="past-city button is-info is-rounded is-small">New Orleans</button>
+            <button class="past-city button is-info is-rounded is-small">Miami</button>
+            <button class="past-city button is-info is-rounded is-small">New Orleans</button>
+            <button class="past-city button is-info is-rounded is-small">Orlando</button>
+            <button class="past-city button is-info is-rounded is-small">Chicago</button>
+            <button class="past-city button is-info is-rounded is-small">Harlem</button>
+            <button class="past-city button is-info is-rounded is-small">Oakland</button>
+            <button class="past-city button is-info is-rounded is-small">Dallas</button>
+
+        </div>
+    </div>
+    <div id="todays-container">
+        <div class="todays-container">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="today-icon" class="w-icon">
+            <div id="current-city">New Orleans</div>
+            <div class="today-info">
+                <div class="day">Monday</div>
+                <div class="temp">Temp: 95&#176; F</div>
+                <div class="wind">Wind 3.94 MPH</div>
+                <div class="humidity">Humidity 63%</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="five-day-forecast" class="columns ">
+        <div id="day1" class="column forcast-containers">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="day1-icon" class="w-icon">
+            <div class="day">Tues</div>
+            <div class="temp">Temp: 95&#176; F</div>
+            <div class="wind">Wind 3.94 MPH</div>
+            <div class="humidity">Humid: 63%</div>
+        </div>
+        <div id="day2" class="column forcast-containers">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="day2-icon" class="w-icon">
+            <div class="day">Wed</div>
+            <div class="temp">Temp: 95&#176; F</div>
+            <div class="wind">Wind 3.94 MPH</div>
+            <div class="humidity">Humid: 63%</div>
+        </div>
+        <div id="day3" class="column forcast-containers">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="day3-icon" class="w-icon">
+            <div class="day">Thurs</div>
+            <div class="temp">Temp: 95&#176; F</div>
+            <div class="wind">Wind 3.94 MPH</div>
+            <div class="humidity">Humid: 63%</div>
+        </div>
+        <div id="day4" class="column forcast-containers">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="day4-icon" class="w-icon">
+            <div class="day">Fri</div>
+            <div class="temp">Temp: 95&#176; F</div>
+            <div class="wind">Wind 3.94 MPH</div>
+            <div class="humidity">Humid: 63%</div>
+        </div>
+        <div id="day5" class="column">
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" id="day5-icon" class="w-icon">
+            <div class="day">Sat</div>
+            <div class="temp">Temp: 95&#176; F</div>
+            <div class="wind">Wind 3.94 MPH</div>
+            <div class="humidity">Humid: 63%</div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

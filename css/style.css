@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url(../images/istockphoto-477110708-170667a.webp); */
+    background-size:cover;
+    background-repeat: no-repeat; 
+
+    height:fit-content; 
+
+}
+/* position 30% and 20% both look good */
+.title-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    /* background: rgba(237, 212, 50, 0.778); */
+    /* background-image: url(../images/sea-164989_1280.jpg); */
+    background-position: 50% 80%; 
+    background-repeat: repeat;
+    max-width: 800;
+    color: azure;
+}
+
+.title-top{
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+#time-container {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: 200;
+
+}
+
+.past-city {
+    font-size: x-small;
+    margin: 5px;
+    padding: 10px;
+    background-color: aliceblue;
+    color: black;
+    max-width: 80px;
+
+}
+
+.location-box {
+    display: flex;
+}
+
+#use-location {
+    padding: 10px;
+    align-items: center;
+    border: none;
+    background: none;
+
+}
+
+#city-history {
+    display: flex;
+    justify-content: start;
+    /* overflow-y: scroll; */
+    min-width: 100px;
+
+}
+
+.past-city {
+    border-color: rgb(13, 14, 37);
+    border-radius: 10%;
+}
+
+#todays-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.todays-container {
+
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    max-height: 300px;
+    /* flex-direction: column; */
+    background: rgba(24, 24, 27, 0.6);
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid #eee;
+    color: azure;
+    font-size: x-large;
+}
+
+
+#today-icon {
+    max-width: 150px;
+}
+
+#current-city {
+    padding: 30px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    max-height: 300px;
+    /* flex-direction: column; */
+    background: rgba(24, 24, 27, 0.6);
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 20px;
+    border: 1px solid #eee;
+    color: azure;
+    font-size: medium;
+    justify-content: space-around;
+}
+
+#five-day-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:730px) {
+    .columns {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    #city-history {
+        justify-content: start;
+        align-items: none;
+        overflow-y: scroll;
+    }
+}

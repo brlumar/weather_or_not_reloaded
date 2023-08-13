@@ -20,7 +20,7 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     /* background: rgba(237, 212, 50, 0.778); */
-    /* background-image: url(../images/sea-164989_1280.jpg); */
+    background-image: url(../images/sea-164989_1280.jpg);
     background-position: 50% 80%; 
     background-repeat: repeat;
     max-width: 800;
@@ -141,3 +141,14 @@ body {
         overflow-y: scroll;
     }
 }
+
+/* Add a media query for mobile phone screens */
+@media (max-width: 768px) {
+    .title-top {
+      flex-direction: column; /* Stack elements vertically for smaller screens */
+    }
+  
+    .time-container {
+      order: 2; /* Move time-container below subtitle */
+    }
+  }

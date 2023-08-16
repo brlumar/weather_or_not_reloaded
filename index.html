@@ -29,26 +29,17 @@
         </div>
         <div class="location-box">
             <button id="use-location" style="font-size:24px"><i class="material-icons">my_location</i></button>
-            <input id="input-box" class="input is-rounded" type="text" placeholder="Enter Your City">
+            <input id="input-box" class="input is-rounded" type="text" placeholder="Enter Your City/Zip And Press Search or Use GPS Button">
             <button id="input-btn" class="button is-success is-rounded">SEARCH</button>
 
-            <!-- <button id="input-btn" class="btn" aria-label="search">  <i class="fas fa-save" aria-hidden="true"></i>
-            </button> -->
-            <!-- <button class="button is-rounded">Rounded</button> -->
-            <!-- <button class="button is-link is-rounded">Rounded</button> -->
-            <!-- <button class="button is-warning">Normal</button> -->
+        
 
         </div>
         <div id="city-history" class="city-history container">
-            <button class="past-city button is-info is-rounded is-small">New Orleans</button>
-            <button class="past-city button is-info is-rounded is-small">Miami</button>
-            <button class="past-city button is-info is-rounded is-small">New Orleans</button>
-            <button class="past-city button is-info is-rounded is-small">Orlando</button>
-            <!-- <button class="past-city button is-info is-rounded is-small">Chicago</button>
-            <button class="past-city button is-info is-rounded is-small">Harlem</button>
-            <button class="past-city button is-info is-rounded is-small">Oakland</button>
-            <button class="past-city button is-info is-rounded is-small">Dallas</button> -->
-
+            <h3 id="history-label" >History: </h3>
+            <div id="print-city-history" class="'city-history container">
+               
+            </div>
         </div>
     </div>
 
@@ -104,7 +95,7 @@
         </div>
     </div>
 
-
+   
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>

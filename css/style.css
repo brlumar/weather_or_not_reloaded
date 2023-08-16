@@ -5,11 +5,14 @@
 }
 
 body {
-    background-image: url(../images/surface-455120_1280.jpg);
+    background-image: url(../images/thunderstorm-1768742_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    min-width: 400px;
+
+    
 }
 
 /* position 30% and 20% both look good */
@@ -70,6 +73,12 @@ body {
 
 }
 
+#history-label{
+    display: flex;
+    align-items: center;
+    
+}
+
 .past-city {
     border-color: rgb(13, 14, 37);
     border-radius: 10%;
@@ -98,9 +107,9 @@ body {
 }
 
 
-#today-icon {
+/* #today-icon {
     max-width: 150px;
-}
+} */
 
 #current-city {
     padding: 30px;
@@ -122,7 +131,7 @@ body {
     justify-content: space-around;
 }
 
-#five-day-forecast {
+#five-day {
     display: flex;
     justify-content: space-between;
 }
@@ -144,7 +153,7 @@ body {
 }
 
 /* Add a media query for mobile phone screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .title-top {
         flex-direction: column;
         /* Stack elements vertically for smaller screens */

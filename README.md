@@ -46,7 +46,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Developed by Brandon Lumar (https://github.com/brlumar) | 
+Developed by Brandon Lumar 
+Github: https://github.com/brlumar/weather_or_not_reloaded
+Site: https://brlumar.github.io/weather_or_not_reloaded/
 
 
 

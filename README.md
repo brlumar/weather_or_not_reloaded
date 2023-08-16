@@ -19,7 +19,7 @@ Welcome to **WeatherOrNot**, your ultimate source for travel weather information
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
-- [Contributing](#contributing)
+- [Images](#images)
 - [License](#license)
 
 
@@ -37,6 +37,14 @@ Welcome to **WeatherOrNot**, your ultimate source for travel weather information
 - CSS3 (Bulma framework)
 - JavaScript (jQuery and Day.js)
 - OpenWeatherMap API
+
+
+### Images
+
+- "Background Image of storm" by [pixabay](https://pixabay.com/photos/thunderstorm-weather-storm-thunder-1768742/) (License: Personal Use)
+- "Background Image with boat" by [pixabay](https://pixabay.com/photos/sea-sunset-boat-dusk-ocean-water-164989/) (License: Personal Use)
+
+
 
 
 

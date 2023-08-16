@@ -5,13 +5,13 @@
 }
 
 body {
-    background-image: url(../images/istockphoto-477110708-170667a.webp);
-    background-size:cover;
-    background-repeat: no-repeat; 
-
-    height:fit-content; 
-
+    background-image: url(../images/surface-455120_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
 }
+
 /* position 30% and 20% both look good */
 .title-box {
     display: flex;
@@ -20,17 +20,18 @@ body {
     border: 1px solid white;
     border-radius: 10px;
     /* background: rgba(237, 212, 50, 0.778); */
-    background-image: url(../images/sea-164989_1280.jpg);
-    background-position: 50% 80%; 
-    background-repeat: repeat;
-    max-width: 800;
+    background-image: url(../images/sea-164989_1920.jpg);
+    background-position: 50% 80%;
+    background-repeat: no-repeat;
+    max-width: 500px;
     color: azure;
+    /* width: 100vw; */
 }
 
-.title-top{
-    display: flex; 
-    justify-content: space-between; 
-} 
+.title-top {
+    display: flex;
+    justify-content: space-between;
+}
 
 #time-container {
     font-family: 'Times New Roman', Times, serif;
@@ -145,10 +146,12 @@ body {
 /* Add a media query for mobile phone screens */
 @media (max-width: 768px) {
     .title-top {
-      flex-direction: column; /* Stack elements vertically for smaller screens */
+        flex-direction: column;
+        /* Stack elements vertically for smaller screens */
     }
-  
+
     .time-container {
-      order: 2; /* Move time-container below subtitle */
+        order: 2;
+        /* Move time-container below subtitle */
     }
-  }
+}
